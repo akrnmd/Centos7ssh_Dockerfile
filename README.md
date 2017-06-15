@@ -1,9 +1,14 @@
+Centos+sshサーバにroot/rootのID/パスワードでログインするためのDocerfileです。 
+ifconfigが使いたいので「RUN yum install -y net-tools」を入れていますが、不要な方はこの行削除でもログイン自体は可能なはずです。 
+「100台のsshサーバにログインテストする」みたいなニッチな用途があったので作りました。
+
 # Centos7ssh_Dockerfile
 Dockerfile for ssh login to Centos 7, ID: root, PW: root
 
+# Environment
 install DockerToolbox.exe
 
-example on Docker Quickstart Terminal
+# Example on Docker Quickstart Terminal
 
 docker build -t centos7ssh .
 

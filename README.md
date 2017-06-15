@@ -114,4 +114,4 @@ docker run --name centos7ssh099 -d -p 32870:22 centos7ssh
 docker run --name centos7ssh100 -d -p 32871:22 centos7ssh  
 
 # Delete all container
-docker rm -f `docker ps -a -q`
+docker rm -f \`docker ps -a -q\`
